@@ -5,14 +5,14 @@ import './TweetBox.css';
 function TweetBox() {
   return (
     <div className='tweetBox'>
-        <from>
+        <form>
             <div className='tweetBox__input'>
                 <Avatar src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/john-wick-rasit-hidayat.jpg"></Avatar>
-                <input placeholder="What's happening?"></input>
-                {/* <input placeholder='Enter image URL'></input> */}
+                <input placeholder="What's happening?" type="text"></input>
             </div>
+            <input className="tweetBox__imageInput" placeholder='Enter image URL' type="text"></input>
             <Button className='tweetBox__tweetButton'>Tweet</Button>
-        </from>
+        </form>
     </div>
   )
 }
