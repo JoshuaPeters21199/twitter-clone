@@ -1,10 +1,11 @@
 import React from 'react'
 import './Feed.css'
 import TweetBox from './TweetBox.js'
-// import './TweetBox.css'
+import './TweetBox.css'
 import Post from './Post.js'
 
 function Feed() {
+  const [posts, setPosts]  = useState([]);
   return (
     <div className='feed'>
       <div className='feed__header'>
