@@ -19,23 +19,23 @@ function Post({
   return (
     <div className='post'>
         <div className='post__avatar'>
-            <Avatar src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/john-wick-rasit-hidayat.jpg"></Avatar>
+            <Avatar src={avatar}></Avatar>
         </div>
         <div className='post__body'>
             <div className='post__header'>
                 <div className='post_headerText'>
                     <h3>
-                        JPeters {" "} 
+                        {displayName} {" "}
                         <span className='post__headerSpecial'>
-                            <VerifiedUserIcon className="post__badge" />
+                            {verified && <VerifiedUserIcon className="post__badge" />} @{username}
                         </span>
                     </h3>
                 </div>
                 <div className='post__headerDescription'>
-                    <p>Whoever comes. Whoever it is. I'll kill them. I'll kill them all.</p>
+                    <p>{text}</p>
                 </div>
             </div>
-            <img src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif" alt="" />
+            <img src={image} alt="" />
             {/* <img src="https://i.redd.it/loq7qoqbfqy51.jpg" alt="" /> */}
             {/* <img src={JohnWick} alt="JohnWick" /> */}
             <div className='post__footer'>
